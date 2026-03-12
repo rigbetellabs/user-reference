@@ -1,8 +1,8 @@
-# RBL User Reference
+# RigBetel Labs User Reference
 
-Public user reference for **Rigbetel Labs** research robots: **Acrux**, **Cepheus**, and **Diadem**.
+Public user reference for **RigBetel Labs** research robots: **Acrux**, **Cepheus**, and **Diadem**.
 
-This repository contains user guides, topic references, and FAQs to help you get started with RBL robots and the RBL Standard Firmware.
+This repository contains user guides, topic references, and FAQs to help you get started with RigBetel Labs robots and the RigBetel Labs Standard Firmware.
 
 ---
 
@@ -18,12 +18,14 @@ This repository contains user guides, topic references, and FAQs to help you get
 
 ## Educational Platforms
 
-The `educational/` folder is a placeholder for upcoming firmware and resources for the TTB-Pro educational robot platforms.
+The `educational/` folder is a placeholder for upcoming firmware and resources for the Tortoisebot educational robot series.
 
 | Platform | Description |
 |----------|-------------|
-| [ttb-pro](educational/ttb-pro/) | TTB-Pro educational robot platform *(coming soon)* |
-| [ttb-pro-wifi](educational/ttb-pro-wifi/) | TTB-Pro WiFi variant with LIDAR support *(coming soon)* |
+| [tortoisebot](https://github.com/rigbetellabs/tortoisebot) | Open Source educational robot (https://github.com/rigbetellabs/tortoisebot) |
+| [ttb-pro](educational/ttb-pro/) | TTB-Pro educational robot  *(Docs coming soon)* |
+| [ttb-pro-wifi](educational/ttb-pro-wifi/) | TTB-Pro WiFi variant with LIDAR support *(Docs coming soon)* |
+| [ttb-pro-max](educational/ttb-pro-max/) | TTB-Pro Max educational robot  *(Docs coming soon)* |
 
 ---
 
@@ -31,12 +33,11 @@ The `educational/` folder is a placeholder for upcoming firmware and resources f
 
 | Robot | Drive Type | ROS Namespace |
 |-------|-----------|---------------|
-| Acrux | 2-wheel differential | `/acrux` |
-| Cepheus | 2-wheel differential | `/cepheus` |
-| Diadem | 4-wheel | `/diadem` |
+| Acrux | 2-wheel differential | `/acrux` `/cepheus`|| 
+| Diadem | 4-wheel | `/diadem` `/cepheus`|
 
-All robots run the **RBL Standard Firmware** on an ESP32 microcontroller via the micro-ROS framework.
+All robots run the **RigBetel Labs Standard Firmware** on an ESP32 microcontroller via the micro-ROS framework.
 
 ---
 
-© Rigbetel Labs
+© RigBetel Labs

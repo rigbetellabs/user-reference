@@ -1,8 +1,43 @@
-# Diadem
+# ROS Topic Reference
 
 **Features via ROS Topics**
 
 The following is a comprehensive list of topics essential for low-level control. Each topic is prefixed with the robot's namespace, which in this case is set to diadem—resulting in all topics being structured as /diadem/topic_name.
+
+> **Note:** The namespace (`diadem` in the examples below) is configurable. Replace it with your robot's assigned namespace (e.g., `/acrux`, `/cepheus`) wherever applicable. All topic paths follow the pattern `/<your_namespace>/topic_name`.
+
+---
+
+## Topic Index
+
+### Subscribers
+
+| Topic | Type | Description |
+|-------|------|-------------|
+| [`/diadem/nav_status`](#diademnavstatus) | `std_msgs/Int32` | Set LED indicators and buzzer for navigation state |
+| [`/diadem/network_status`](#diademnetworkstatus) | `std_msgs/String` | Display network info on robot's screen |
+| [`/diadem/pid/mode`](#diampidmode) | `std_msgs/Int8` | Set PID control mode |
+| [`/diadem/pid/constants`](#diampidconstants) | `std_msgs/Float32MultiArray` | Update PID constants |
+| [`/diadem/pid/custom/save`](#diampidcustomsave) | `std_msgs/Empty` | Save custom PID configuration |
+| [`/diadem/cmd_vel`](#diademcmdvel) | `geometry_msgs/Twist` | Send velocity commands |
+| [`/diadem/buzzer/enable`](#diadembuzzerenable) | `std_msgs/Bool` | Enable/disable buzzer |
+| [`/diadem/wheel/ticks_reset`](#diademwheelticksreset) | `std_msgs/Empty` | Reset encoder ticks |
+| [`/diadem/microros_domain_id`](#diademicrorosdomainid) | `std_msgs/Int8` | Change micro-ROS domain ID |
+
+### Publishers
+
+| Topic | Type | Description |
+|-------|------|-------------|
+| [`/diadem/battery/percentage`](#diambatteryperentage) | `std_msgs/Int8` | Remaining battery percentage |
+| [`/diadem/battery/voltage`](#diambatteryvoltage) | `std_msgs/Float32` | Current battery voltage |
+| [`/diadem/wheel/ticks`](#diademwheelticks) | `std_msgs/Int64MultiArray` | Encoder ticks for all wheels |
+| [`/diadem/wheel/vel`](#diademwheelvel) | `std_msgs/Float64MultiArray` | Current wheel velocities |
+| [`/diadem/wheel/rpm`](#diademwheelrpm) | `std_msgs/Float32MultiArray` | Wheel RPM values |
+| [`/diadem/cmd_vel`](#diademcmdvel-1) | `geometry_msgs/Twist` | Publishes velocity commands |
+| [`/diadem/imu/raw_data`](#diademimrawdata) | `sensor_msgs/Imu` | IMU orientation and acceleration data |
+| [`/diadem/estop/status`](#diademestopstatus) | `std_msgs/Bool` | Emergency stop button status |
+
+---
 
 ## Node Name
 
