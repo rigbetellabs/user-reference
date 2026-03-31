@@ -1,5 +1,5 @@
 # Frequently Asked Questions (FAQ)
-### Rigbetel Labs Robot Firmware — Diadem / Cepheus / Acrux
+### RigBetel Labs Standard Firmware — Diadem / Cepheus / Acrux / TortoiseBot Pro Max
 
 ---
 
@@ -25,7 +25,7 @@
 **Q1. How do I power on the robot and what should I see on startup?**
 
 Power on the robot using the main power switch. On startup you will:
-1. See the LCD display show **"Rigbetel Labs"** on the top row and the robot's model name (e.g., `Acrux`) on the bottom row.
+1. See the LCD display show **"RigBetel Labs"** on the top row and the robot's model name (e.g., `Acrux`) on the bottom row.
 2. Hear the **Rigbetel Classic boot tone** from the buzzer (see [Buzzer Indications](#10-buzzer-indications)).
 3. See all LEDs light up in **Rigbetel purple** for a brief moment.
 4. The LEDs will then transition to an **orange pulsing animation**, indicating the robot is searching for a micro-ROS agent to connect to.
@@ -172,6 +172,7 @@ Each robot has a unique namespace. Topics are prefixed with it:
 | Diadem | `/diadem` | `/diadem/cmd_vel` |
 | Cepheus | `/cepheus` | `/cepheus/cmd_vel` |
 | Acrux | `/acrux` | `/acrux/cmd_vel` |
+| TortoiseBot Pro Max | *(none by default)* | `/cmd_vel` |
 
 The namespace can be changed at runtime via the `/[namespace]/namespace` topic. The new namespace is saved to flash memory and persists across reboots.
 
@@ -479,7 +480,7 @@ The buzzer provides audio feedback for all major robot events. Below is the comp
 |---|---|---|---|
 | Rigbetel Classic Tone | 7 beeps | Signature rhythm: `beep · beep · beep · beep — beep · beep · beep` | Robot has powered on and initialized successfully |
 
-The boot tone plays once at startup after the display shows "Rigbetel Labs".
+The boot tone plays once at startup after the display shows "RigBetel Labs".
 
 ---
 
@@ -599,7 +600,7 @@ Note: This only suppresses future buzzer patterns. It does not disable safety-cr
 
 **Q52. The display is not turning on — what should I check?**
 
-Check the wiring and connectors to the LCD display. If the issue persists after verifying the connections, contact **Rigbetel Labs** for support.
+Check the wiring and connectors to the LCD display. If the issue persists after verifying the connections, contact **RigBetel Labs** for support.
 
 ---
 
@@ -645,4 +646,4 @@ When the agent connection is lost (`AGENT_DISCONNECTED` state):
 
 ---
 
-*For further assistance, contact Rigbetel Labs or refer to the full API documentation.*
+*For further assistance, contact RigBetel Labs or refer to the full API documentation.*

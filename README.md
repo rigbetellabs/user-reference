@@ -25,7 +25,7 @@ The `educational/` folder is a placeholder for upcoming firmware and resources f
 | [tortoisebot](https://github.com/rigbetellabs/tortoisebot) | Open Source educational robot (https://github.com/rigbetellabs/tortoisebot) |
 | [ttb-pro](educational/ttb-pro/) | TTB-Pro educational robot  *(Docs coming soon)* |
 | [ttb-pro-wifi](educational/ttb-pro-wifi/) | TTB-Pro WiFi variant with LIDAR support *(Docs coming soon)* |
-| [ttb-pro-max](educational/ttb-pro-max/) | TTB-Pro Max educational robot  *(Docs coming soon)* |
+| [ttb-pro-max](docs/tortoisebot_pro_max_user_docs.md) | TTB-Pro Max educational robot |
 
 ---
 
