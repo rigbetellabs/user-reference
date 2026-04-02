@@ -1,5 +1,25 @@
 # TortoiseBot Pro Max
 
+### User Guide
+
+For a complete operational walkthrough — boot sequence, ROS 2 integration, motor control, battery management, and safety procedures — see the [User Guide](user_guide.md).
+
+### FAQ
+
+| Topic | Relevant Questions |
+| ----- | ------------------ |
+| Getting started & micro-ROS agent setup | [Q1–Q5](FAQ.md#1-general--getting-started) |
+| LCD display layout & status indicators | [Q6–Q10](FAQ.md#2-display--status-indicators) |
+| Battery voltage range, low-battery alert, safe discharge limit | [Q11–Q14](FAQ.md#3-battery) |
+| ROS topics, namespaces, velocity commands, encoder & IMU data | [Q15–Q21](FAQ.md#4-ros-topics--communication) |
+| Navigation states — display, LED, and buzzer behaviour | [Q22–Q26](FAQ.md#5-navigation--states) |
+| Emergency stop — trigger, effect, and recovery | [Q27–Q30](FAQ.md#6-emergency-stop) |
+| PID control modes, tuning constants, saving to flash | [Q31–Q35](FAQ.md#7-pid-control) |
+| Domain ID — changing, persistence, troubleshooting | [Q41–Q43, Q53](FAQ.md#9-domain-id--networking) |
+| Full buzzer pattern reference | [Q45](FAQ.md#10-buzzer-indications) |
+| Troubleshooting — no topics, orange LEDs, erratic motion | [Q46–Q53](FAQ.md#11-troubleshooting) |
+| Namespace change, firmware internals, agent reconnection | [Q54–Q56](FAQ.md#12-advanced--developer) |
+
 **Features via ROS Topics**
 
 The following is a comprehensive list of topics available for interfacing with the TortoiseBot Pro Max. All topics are relative to the robot's ROS namespace. By default, no namespace prefix is set, so topics are published at the root level (e.g., `/cmd_vel`). If a custom namespace has been configured, all topics will be prefixed accordingly (e.g., `/my_robot/cmd_vel`).
@@ -331,26 +351,4 @@ ros2 param get /microros_node version
 
 ---
 
-## Further Reading
 
-The following documents from the RigBetel Labs reference repo cover topics that also apply to the TortoiseBot Pro Max.
-
-### FAQ
-
-| Topic | Relevant Questions |
-| ----- | ------------------ |
-| Getting started & micro-ROS agent setup | [Q1–Q5](FAQ.md#1-general--getting-started) |
-| LCD display layout & status indicators | [Q6–Q10](FAQ.md#2-display--status-indicators) |
-| Battery voltage range, low-battery alert, safe discharge limit | [Q11–Q14](FAQ.md#3-battery) |
-| ROS topics, namespaces, velocity commands, encoder & IMU data | [Q15–Q21](FAQ.md#4-ros-topics--communication) |
-| Navigation states — display, LED, and buzzer behaviour | [Q22–Q26](FAQ.md#5-navigation--states) |
-| Emergency stop — trigger, effect, and recovery | [Q27–Q30](FAQ.md#6-emergency-stop) |
-| PID control modes, tuning constants, saving to flash | [Q31–Q35](FAQ.md#7-pid-control) |
-| Domain ID — changing, persistence, troubleshooting | [Q41–Q43, Q53](FAQ.md#9-domain-id--networking) |
-| Full buzzer pattern reference | [Q45](FAQ.md#10-buzzer-indications) |
-| Troubleshooting — no topics, orange LEDs, erratic motion | [Q46–Q53](FAQ.md#11-troubleshooting) |
-| Namespace change, firmware internals, agent reconnection | [Q54–Q56](FAQ.md#12-advanced--developer) |
-
-### User Guide
-
-For a complete operational walkthrough — boot sequence, ROS 2 integration, motor control, battery management, and safety procedures — see the [User Guide](user_guide.md).
