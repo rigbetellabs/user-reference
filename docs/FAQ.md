@@ -56,7 +56,7 @@ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
 ```
 or over serial:
 ```bash
-ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0
+ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0 --baudrate 921600
 ```
 
 ---
